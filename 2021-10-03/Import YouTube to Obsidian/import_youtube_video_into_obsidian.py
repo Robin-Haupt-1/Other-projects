@@ -52,7 +52,6 @@ def select_streams(video):
 class YoutubeDownloader:
     def __init__(self):
         self.target_folder_for_md = r"/hdd/Obsidian/Main/"
-        year_quarter_date = datetime2.now().strftime(f"%Y-Q{str(ceil(datetime2.now().month / 3.))}/%Y-%m-%d")
         self.target_folder_for_attachments = r"/hdd/Obsidian/Main/ο Anhänge"
         self.obsidian_template = obsidian_template
         self.output_attachments_folder = ".temp/output/"
