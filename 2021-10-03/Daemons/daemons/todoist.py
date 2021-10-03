@@ -124,7 +124,7 @@ class ListDaemon(DaemonTask):
 
     def do_idle_run(self):
         """Return true if user has been idle for more than n seconds, but only once per idle period"""
-        if not self.idle_ran and activity_monitor.idle_seconds() > 600:
+        if not self.idle_ran and self.activity_monitor.idle_seconds() > 600:
             self.log("Doing idle run")
             self.idle_ran = True
             return True
