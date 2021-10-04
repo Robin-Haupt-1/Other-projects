@@ -55,8 +55,8 @@ class EditNewWordsDialog(QDialog):
         grid.addWidget(self.done_button, 1, 1)
         self.setLayout(grid)
         self.setWindowTitle('Edit new words')
-        #self.setMinimumWidth(1200)
-        #self.setMinimumHeight(1000)
+        self.setMinimumWidth(1200)
+        self.setMinimumHeight(1000)
         sb = self.new_words.verticalScrollBar()
         sb.setValue(sb.maximum())
 
@@ -178,7 +178,7 @@ class CorrectScrubbingOutput(QDialog):
         self.setLayout(grid)
         self.setWindowTitle('Edit scrubbing output')
         self.setMinimumWidth(500)
-        #self.setMinimumHeight(1000)
+        self.setMinimumHeight(1000)
         self.look_up_scrubbed()
 
         self.triage()
